@@ -6,3 +6,6 @@ virtualenv --no-site-packages env
 source env/bin/activate
 npm install -b bower
 bower init
+npm init
+npm install --save-dev bower
+vim .bowerrc

@@ -1,0 +1,17 @@
+{
+  "name": "ultimate-react-flask",
+  "version": "1.0.0",
+  "description": "https://realpython.com/blog/python/the-ultimate-flask-front-end/",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.7"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
