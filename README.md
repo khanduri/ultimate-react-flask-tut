@@ -9,3 +9,5 @@ bower init
 npm init
 npm install --save-dev bower
 vim .bowerrc
+update bower.json with dependencies
+bower install
