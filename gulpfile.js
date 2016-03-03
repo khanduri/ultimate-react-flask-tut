@@ -14,9 +14,10 @@ var gulp = require('gulp'),
 // Tasks
 gulp.task('default', function(){
  gulp.start('transform');
+ gulp.watch('static/scripts/jsx/main.jsx', ['transform']);
 });
 
-gulp.task('transform', function(){
+gulp.task('transform', ['clean'], function(){
   // The transformer is not working for me .. I'm just using the client side transformer
   return gulp.src('static/scripts/jsx/main.jsx')
     // .pipe(browserify({transform: [reactify]}))
@@ -27,5 +28,11 @@ gulp.task('transform', function(){
     .pipe(size());
 });
 
-// gulp.task('clean', function(){});
+gulp.task('clean', function(){
+  return gulp.src(
+      [
+        'static/scripts/js/compiled'
+      ], {read: false})
+    .pipe(clean());
+});
 
